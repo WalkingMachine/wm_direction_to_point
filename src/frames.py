@@ -20,7 +20,8 @@ class Frames():
         self.listener = tf.TransformListener()
         self.broadcaster = tf.TransformBroadcaster()
         rospy.spin()
-#njnvd
+
+    print("ok");
     def service(self, req):
         print(req.reference)
 
@@ -41,7 +42,7 @@ class Frames():
         (trans2, rot) = self.listener.lookupTransform(req.reference, req.origine, rospy.Time(0))
 
         angular = math.atan2((trans[1] - trans2[1]), (trans[0] - trans2[0]))
-
+        print("ok2");
         print('angle = ' + str(angular))
 
         return get_directionResponse(angular, 0 )
