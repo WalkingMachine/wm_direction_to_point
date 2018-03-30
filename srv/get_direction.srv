@@ -1,0 +1,6 @@
+geometry_msgs/Point point
+string reference
+string origine
+---
+float64 yaw
+float64 pitch
