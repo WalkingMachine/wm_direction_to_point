@@ -1,7 +1,7 @@
 # wm_direction_to_point
 
 ## Overview
-service that give an angle between two points.
+service that gives an angle between two points.
 
     **Author(s): Huynh-Anh Le 
             (Annie-Anh)
