@@ -18,9 +18,9 @@ class Frames():
         rospy.init_node('wm_direction_to_point')
         s = rospy.Service('get_direction', get_direction, self.service)
         self.listener = tf.TransformListener()
+        print("wm_direction_to_point is ready")
         rospy.spin()
 
-    print("ok");
     def service(self, req):
 
         point = geometry_msgs.msg.PointStamped()
