@@ -1,0 +1,6 @@
+<?xml version='1.0'?>
+
+<launch>
+    <node pkg="wm_direction_to_point" type="direction_to_point_server.py" name="direction_to_point_server" output="screen">
+    </node>
+</launch>
